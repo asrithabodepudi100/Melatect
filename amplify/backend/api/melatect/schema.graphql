@@ -1,0 +1,5 @@
+type Entry @model {
+  id: ID!
+  mainImage: String!
+}
+

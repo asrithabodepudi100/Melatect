@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-melatect-dev-125822-authRole",
+      "UnauthRoleArn": "arn:aws:iam::767588983612:role/amplify-melatect-dev-125822-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::767588983612:role/amplify-melatect-dev-125822-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-melatect-dev-125822-deployment",
+      "UnauthRoleName": "amplify-melatect-dev-125822-unauthRole",
+      "StackName": "amplify-melatect-dev-125822",
+      "StackId": "arn:aws:cloudformation:us-east-1:767588983612:stack/amplify-melatect-dev-125822/bf5d5730-6324-11eb-a223-12cf2806950f",
+      "AmplifyAppId": "dbnjihctkf099"
+    },
+    "categories": {
+      "auth": {
+        "melatect9c891927": {}
+      }
+    }
+  }
+}
