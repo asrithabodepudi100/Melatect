@@ -1,5 +1,4 @@
 type Entry @model {
   id: ID!
-  mainImage: String!
+  imageKey: String!
 }
-

@@ -19,8 +19,8 @@ class ClinicalTrialTableViewCell: UITableViewCell {
         super.awakeFromNib()
         
         grayBackground.layer.cornerRadius = 30
-        mainImageView.layer.cornerRadius = 30
-        // Initialization code
+        mainImageView.layer.cornerRadius = 15 //This will change with corners of image and height/2 will make this circle shape
+        mainImageView.clipsToBounds = true
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

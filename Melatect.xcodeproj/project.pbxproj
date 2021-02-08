@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		21F695EC3AC440D88774B69F /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 9C04D086484D4756AB2D33CF /* awsconfiguration.json */; };
 		346C1FEC00403C4BE7C151DC /* Pods_Melatect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07490F0E687D2FD0E3866792 /* Pods_Melatect.framework */; };
-		6B0362140FEA4FFB90371358 /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 8BF7502751F74093AB791CC0 /* amplifyconfiguration.json */; };
+		3F51A0AFBA3F4C19881188F9 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = E3B312F2149C44688CBEAF20 /* awsconfiguration.json */; };
+		540C2215E2C64901ACA00FB0 /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 2D9776B048214F559E7BE157 /* amplifyconfiguration.json */; };
+		575B7102D3A4486E9D234F32 /* Entry+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = C844D3175EF249B092686BC2 /* Entry+Schema.swift */; };
 		8900C9CE25787B7900501450 /* malignOrBenignLoadingScreen.json in Resources */ = {isa = PBXBuildFile; fileRef = 8900C9CD25787B7900501450 /* malignOrBenignLoadingScreen.json */; };
 		890A0247256C072B00724AE6 /* moleScanDetectorModel1_copy.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 890A0246256C072B00724AE6 /* moleScanDetectorModel1_copy.mlmodel */; };
 		890A0259256C231600724AE6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 890A0258256C231600724AE6 /* Main.storyboard */; };
@@ -20,12 +21,15 @@
 		895D387D255241E5006001FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895D387C255241E5006001FD /* AppDelegate.swift */; };
 		895D387F255241E5006001FD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895D387E255241E5006001FD /* SceneDelegate.swift */; };
 		895D3886255241EA006001FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 895D3885255241EA006001FD /* Assets.xcassets */; };
+		8963BF0325CDDEC5007982FE /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8963BF0225CDDEC5007982FE /* WebKit.framework */; };
 		897E94E8255247E500726EC4 /* doctor.json in Resources */ = {isa = PBXBuildFile; fileRef = 897E94E7255247E500726EC4 /* doctor.json */; };
 		897E94EB255247EC00726EC4 /* phone.json in Resources */ = {isa = PBXBuildFile; fileRef = 897E94EA255247EC00726EC4 /* phone.json */; };
 		897E94EF2552496200726EC4 /* PreviewToSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897E94EE2552496200726EC4 /* PreviewToSignUpViewController.swift */; };
+		8982F44825CE4591001A5AE9 /* ClinicalTrialsNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8982F44725CE4590001A5AE9 /* ClinicalTrialsNavigationViewController.swift */; };
 		8984BB9725659A700089B808 /* RiskAssessmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8984BB9625659A700089B808 /* RiskAssessmentViewController.swift */; };
 		89BF9E842555084800DDCE29 /* DoctorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BF9E822555084800DDCE29 /* DoctorTableViewCell.swift */; };
 		89BF9E852555084800DDCE29 /* DoctorTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89BF9E832555084800DDCE29 /* DoctorTableViewCell.xib */; };
+		89C1B53D25CD8BEA007EEEB8 /* HippaPrivacyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C1B53C25CD8BEA007EEEB8 /* HippaPrivacyViewController.swift */; };
 		89CCE62E257871E500DD18F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89CCE62D257871E500DD18F6 /* LaunchScreen.storyboard */; };
 		89DB75652567424D002DE110 /* MratConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DB75642567424C002DE110 /* MratConstants.swift */; };
 		89DEF8C42569EB82002B8F34 /* ScanMoleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DEF8C32569EB82002B8F34 /* ScanMoleViewController.swift */; };
@@ -37,17 +41,21 @@
 		89E15B0E25B8755200B3E184 /* ClinicalTrialsEnterPhotosOfMoleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E15B0D25B8755200B3E184 /* ClinicalTrialsEnterPhotosOfMoleViewController.swift */; };
 		89E15B1125B8757F00B3E184 /* ClinicalTrialsEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E15B1025B8757F00B3E184 /* ClinicalTrialsEntryViewController.swift */; };
 		89E15B2C25B87AC100B3E184 /* ClinicalTrialEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E15B2B25B87AC100B3E184 /* ClinicalTrialEntry.swift */; };
+		89F39AC025CCD1CF0085B957 /* OpeningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F39ABF25CCD1CF0085B957 /* OpeningViewController.swift */; };
+		89F39AC325CCD2020085B957 /* ClinicalTrialsSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F39AC225CCD2020085B957 /* ClinicalTrialsSignUpViewController.swift */; };
 		89FB3B202575494D009F33E3 /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FB3B1E2575494D009F33E3 /* SideMenuViewController.swift */; };
 		89FB3B212575494D009F33E3 /* SideMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89FB3B1F2575494D009F33E3 /* SideMenuViewController.xib */; };
 		89FB3B2C257590E0009F33E3 /* SideMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FB3B2A257590E0009F33E3 /* SideMenuTableViewCell.swift */; };
 		89FB3B2D257590E0009F33E3 /* SideMenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89FB3B2B257590E0009F33E3 /* SideMenuTableViewCell.xib */; };
 		89FB3B352575A15F009F33E3 /* SideMenuWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FB3B342575A15F009F33E3 /* SideMenuWebViewController.swift */; };
+		E1CB1948BFFD46228BD4549E /* AmplifyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5569804A96496FB764A52E /* AmplifyModels.swift */; };
+		F7DA15149D5B43B480A887D6 /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0025CF4C56147789DB6229E /* Entry.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		07490F0E687D2FD0E3866792 /* Pods_Melatect.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Melatect.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		274B889017284F9E8A916AA7 /* schema.graphql */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = text; name = schema.graphql; path = amplify/backend/api/melatect/schema.graphql; sourceTree = "<group>"; };
-		6959F9F13ABA47CDB9ADE579 /* amplifytools.xcconfig */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = text.xcconfig; path = amplifytools.xcconfig; sourceTree = "<group>"; };
+		283BB67FBCB546E28A214BCC /* schema.graphql */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = text; name = schema.graphql; path = amplify/backend/api/melatect/schema.graphql; sourceTree = "<group>"; };
+		2D9776B048214F559E7BE157 /* amplifyconfiguration.json */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; path = amplifyconfiguration.json; sourceTree = "<group>"; };
 		7016618E731DDADE41390327 /* Pods-Melatect.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Melatect.release.xcconfig"; path = "Target Support Files/Pods-Melatect/Pods-Melatect.release.xcconfig"; sourceTree = "<group>"; };
 		8900C9CD25787B7900501450 /* malignOrBenignLoadingScreen.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = malignOrBenignLoadingScreen.json; sourceTree = "<group>"; };
 		890A0246256C072B00724AE6 /* moleScanDetectorModel1_copy.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = moleScanDetectorModel1_copy.mlmodel; sourceTree = "<group>"; };
@@ -61,12 +69,15 @@
 		895D387E255241E5006001FD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		895D3885255241EA006001FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		895D388A255241EA006001FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8963BF0225CDDEC5007982FE /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		897E94E7255247E500726EC4 /* doctor.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = doctor.json; sourceTree = "<group>"; };
 		897E94EA255247EC00726EC4 /* phone.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = phone.json; sourceTree = "<group>"; };
 		897E94EE2552496200726EC4 /* PreviewToSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewToSignUpViewController.swift; sourceTree = "<group>"; };
+		8982F44725CE4590001A5AE9 /* ClinicalTrialsNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClinicalTrialsNavigationViewController.swift; sourceTree = "<group>"; };
 		8984BB9625659A700089B808 /* RiskAssessmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiskAssessmentViewController.swift; sourceTree = "<group>"; };
 		89BF9E822555084800DDCE29 /* DoctorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorTableViewCell.swift; sourceTree = "<group>"; };
 		89BF9E832555084800DDCE29 /* DoctorTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DoctorTableViewCell.xib; sourceTree = "<group>"; };
+		89C1B53C25CD8BEA007EEEB8 /* HippaPrivacyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HippaPrivacyViewController.swift; sourceTree = "<group>"; };
 		89CCE62D257871E500DD18F6 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89DB75642567424C002DE110 /* MratConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MratConstants.swift; sourceTree = "<group>"; };
 		89DEF8C32569EB82002B8F34 /* ScanMoleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanMoleViewController.swift; sourceTree = "<group>"; };
@@ -78,13 +89,18 @@
 		89E15B0D25B8755200B3E184 /* ClinicalTrialsEnterPhotosOfMoleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClinicalTrialsEnterPhotosOfMoleViewController.swift; sourceTree = "<group>"; };
 		89E15B1025B8757F00B3E184 /* ClinicalTrialsEntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClinicalTrialsEntryViewController.swift; sourceTree = "<group>"; };
 		89E15B2B25B87AC100B3E184 /* ClinicalTrialEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClinicalTrialEntry.swift; sourceTree = "<group>"; };
+		89F39ABF25CCD1CF0085B957 /* OpeningViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpeningViewController.swift; sourceTree = "<group>"; };
+		89F39AC225CCD2020085B957 /* ClinicalTrialsSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClinicalTrialsSignUpViewController.swift; sourceTree = "<group>"; };
 		89FB3B1E2575494D009F33E3 /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
 		89FB3B1F2575494D009F33E3 /* SideMenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SideMenuViewController.xib; sourceTree = "<group>"; };
 		89FB3B2A257590E0009F33E3 /* SideMenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuTableViewCell.swift; sourceTree = "<group>"; };
 		89FB3B2B257590E0009F33E3 /* SideMenuTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SideMenuTableViewCell.xib; sourceTree = "<group>"; };
 		89FB3B342575A15F009F33E3 /* SideMenuWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuWebViewController.swift; sourceTree = "<group>"; };
-		8BF7502751F74093AB791CC0 /* amplifyconfiguration.json */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; path = amplifyconfiguration.json; sourceTree = "<group>"; };
-		9C04D086484D4756AB2D33CF /* awsconfiguration.json */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; path = awsconfiguration.json; sourceTree = "<group>"; };
+		993A9792E2884B7599F74499 /* amplifytools.xcconfig */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = text.xcconfig; path = amplifytools.xcconfig; sourceTree = "<group>"; };
+		C844D3175EF249B092686BC2 /* Entry+Schema.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = "Entry+Schema.swift"; path = "amplify/generated/models/Entry+Schema.swift"; sourceTree = "<group>"; };
+		CE5569804A96496FB764A52E /* AmplifyModels.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = AmplifyModels.swift; path = amplify/generated/models/AmplifyModels.swift; sourceTree = "<group>"; };
+		D0025CF4C56147789DB6229E /* Entry.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = Entry.swift; path = amplify/generated/models/Entry.swift; sourceTree = "<group>"; };
+		E3B312F2149C44688CBEAF20 /* awsconfiguration.json */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; path = awsconfiguration.json; sourceTree = "<group>"; };
 		FD29A08BA525279D0283D83D /* Pods-Melatect.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Melatect.debug.xcconfig"; path = "Target Support Files/Pods-Melatect/Pods-Melatect.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -93,6 +109,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8963BF0325CDDEC5007982FE /* WebKit.framework in Frameworks */,
 				346C1FEC00403C4BE7C151DC /* Pods_Melatect.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -103,6 +120,7 @@
 		08CD7B21F3D16F3AFC074C44 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8963BF0225CDDEC5007982FE /* WebKit.framework */,
 				07490F0E687D2FD0E3866792 /* Pods_Melatect.framework */,
 			);
 			name = Frameworks;
@@ -115,6 +133,18 @@
 				7016618E731DDADE41390327 /* Pods-Melatect.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		7D8738152E364955B79019CB /* AmplifyConfig */ = {
+			isa = PBXGroup;
+			children = (
+				993A9792E2884B7599F74499 /* amplifytools.xcconfig */,
+				2D9776B048214F559E7BE157 /* amplifyconfiguration.json */,
+				E3B312F2149C44688CBEAF20 /* awsconfiguration.json */,
+				283BB67FBCB546E28A214BCC /* schema.graphql */,
+			);
+			name = AmplifyConfig;
+			path = .;
 			sourceTree = "<group>";
 		};
 		8938E2C62560791F0064656B /* Model */ = {
@@ -130,7 +160,8 @@
 		895D3870255241E5006001FD = {
 			isa = PBXGroup;
 			children = (
-				C988A574F83144CA932413A0 /* AmplifyConfig */,
+				F406FCA4CAF34B36AE3E6E16 /* AmplifyModels */,
+				7D8738152E364955B79019CB /* AmplifyConfig */,
 				895D387B255241E5006001FD /* Melatect */,
 				895D387A255241E5006001FD /* Products */,
 				4978B452F9CDD3B61543D261 /* Pods */,
@@ -183,6 +214,8 @@
 				8984BB9625659A700089B808 /* RiskAssessmentViewController.swift */,
 				89DEF8C32569EB82002B8F34 /* ScanMoleViewController.swift */,
 				89DEF8C62569F74B002B8F34 /* DisplayDiagnosisViewController.swift */,
+				89F39ABF25CCD1CF0085B957 /* OpeningViewController.swift */,
+				89C1B53C25CD8BEA007EEEB8 /* HippaPrivacyViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -217,9 +250,11 @@
 		89E15B2925B8799200B3E184 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				8982F44725CE4590001A5AE9 /* ClinicalTrialsNavigationViewController.swift */,
 				89E15B0A25B8751C00B3E184 /* ClinicalTrialsHomePageViewController.swift */,
 				89E15B0D25B8755200B3E184 /* ClinicalTrialsEnterPhotosOfMoleViewController.swift */,
 				89E15B1025B8757F00B3E184 /* ClinicalTrialsEntryViewController.swift */,
+				89F39AC225CCD2020085B957 /* ClinicalTrialsSignUpViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -248,15 +283,14 @@
 			path = "Side Menu";
 			sourceTree = "<group>";
 		};
-		C988A574F83144CA932413A0 /* AmplifyConfig */ = {
+		F406FCA4CAF34B36AE3E6E16 /* AmplifyModels */ = {
 			isa = PBXGroup;
 			children = (
-				6959F9F13ABA47CDB9ADE579 /* amplifytools.xcconfig */,
-				8BF7502751F74093AB791CC0 /* amplifyconfiguration.json */,
-				9C04D086484D4756AB2D33CF /* awsconfiguration.json */,
-				274B889017284F9E8A916AA7 /* schema.graphql */,
+				CE5569804A96496FB764A52E /* AmplifyModels.swift */,
+				D0025CF4C56147789DB6229E /* Entry.swift */,
+				C844D3175EF249B092686BC2 /* Entry+Schema.swift */,
 			);
-			name = AmplifyConfig;
+			name = AmplifyModels;
 			path = .;
 			sourceTree = "<group>";
 		};
@@ -329,8 +363,8 @@
 				89BF9E852555084800DDCE29 /* DoctorTableViewCell.xib in Resources */,
 				89FB3B2D257590E0009F33E3 /* SideMenuTableViewCell.xib in Resources */,
 				89CCE62E257871E500DD18F6 /* LaunchScreen.storyboard in Resources */,
-				6B0362140FEA4FFB90371358 /* amplifyconfiguration.json in Resources */,
-				21F695EC3AC440D88774B69F /* awsconfiguration.json in Resources */,
+				540C2215E2C64901ACA00FB0 /* amplifyconfiguration.json in Resources */,
+				3F51A0AFBA3F4C19881188F9 /* awsconfiguration.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,13 +420,17 @@
 				89DEF8C72569F74B002B8F34 /* DisplayDiagnosisViewController.swift in Sources */,
 				89FB3B202575494D009F33E3 /* SideMenuViewController.swift in Sources */,
 				894072CA256CB48E000187FF /* MoleEntry.swift in Sources */,
+				89F39AC025CCD1CF0085B957 /* OpeningViewController.swift in Sources */,
 				89FB3B2C257590E0009F33E3 /* SideMenuTableViewCell.swift in Sources */,
 				89E15B0425B8679100B3E184 /* ClinicalTrialTableViewCell.swift in Sources */,
 				895D387D255241E5006001FD /* AppDelegate.swift in Sources */,
 				89DB75652567424D002DE110 /* MratConstants.swift in Sources */,
 				89E15B2C25B87AC100B3E184 /* ClinicalTrialEntry.swift in Sources */,
+				89F39AC325CCD2020085B957 /* ClinicalTrialsSignUpViewController.swift in Sources */,
+				8982F44825CE4591001A5AE9 /* ClinicalTrialsNavigationViewController.swift in Sources */,
 				890A0247256C072B00724AE6 /* moleScanDetectorModel1_copy.mlmodel in Sources */,
 				895D387F255241E5006001FD /* SceneDelegate.swift in Sources */,
+				89C1B53D25CD8BEA007EEEB8 /* HippaPrivacyViewController.swift in Sources */,
 				894E5D8D255706BC0091641D /* MyDoctorsViewController.swift in Sources */,
 				89E15B0B25B8751C00B3E184 /* ClinicalTrialsHomePageViewController.swift in Sources */,
 				89E15B1125B8757F00B3E184 /* ClinicalTrialsEntryViewController.swift in Sources */,
@@ -405,6 +443,9 @@
 				8984BB9725659A700089B808 /* RiskAssessmentViewController.swift in Sources */,
 				89DEF8C42569EB82002B8F34 /* ScanMoleViewController.swift in Sources */,
 				8938E2C4256079160064656B /* Doctor.swift in Sources */,
+				E1CB1948BFFD46228BD4549E /* AmplifyModels.swift in Sources */,
+				F7DA15149D5B43B480A887D6 /* Entry.swift in Sources */,
+				575B7102D3A4486E9D234F32 /* Entry+Schema.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -534,7 +575,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = NTC9D823P9;
 				INFOPLIST_FILE = Melatect/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
@@ -542,7 +583,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.4;
+				MARKETING_VERSION = 1.6;
 				PRODUCT_BUNDLE_IDENTIFIER = tech.tonnelier.melatect;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -557,7 +598,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = NTC9D823P9;
 				INFOPLIST_FILE = Melatect/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
@@ -565,7 +606,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.4;
+				MARKETING_VERSION = 1.6;
 				PRODUCT_BUNDLE_IDENTIFIER = tech.tonnelier.melatect;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

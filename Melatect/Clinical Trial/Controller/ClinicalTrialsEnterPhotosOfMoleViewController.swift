@@ -13,6 +13,7 @@ import RealmSwift
 class ClinicalTrialsPhotoOfMoleTableViewCell: UITableViewCell{
     
     @IBOutlet weak var moleImageView: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
     }
@@ -31,8 +32,13 @@ class ClinicalTrialsEnterPhotosOfMoleViewController: UIViewController {
     
     
     //IBOUTLETS
+    @IBOutlet weak var backgroundView: UIView!
     @IBOutlet weak var imagesTableView: UITableView!
     @IBOutlet weak var mainImageView: UIImageView!
+    @IBOutlet weak var addSupplementaryImage: UIButton!
+    @IBOutlet weak var mainImageLabel: UILabel!
+    @IBOutlet weak var plusCircleImagView: UIImageView!
+    
     
     //VIEW HEIRACHY METHODS
     override func viewDidLoad() {
@@ -42,11 +48,35 @@ class ClinicalTrialsEnterPhotosOfMoleViewController: UIViewController {
         
         let folderPath = realm.configuration.fileURL!.deletingLastPathComponent().path
         print (folderPath)
+        
+        addSupplementaryImage.layer.cornerRadius = 15
+        backgroundView.layer.cornerRadius = 17
+        imagesTableView.allowsSelection = false
+        imagesTableView.separatorStyle = .none
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "goToClinicalTrialsEntryViewController"){
             let destinationVC = segue.destination as! ClinicalTrialsEntryViewController
             destinationVC.clinicalTrialEntry = newClinicalTrialEntry
+        }
+    }
+    @IBAction func nextButtonPressed(_ sender: UIBarButtonItem) {
+        if newClinicalTrialEntry.mainImage == nil {
+            let alert = UIAlertController(title: "Please enter a main image", message: "Our machine learning model needs a main image to make a diagnosis", preferredStyle: UIAlertController.Style.alert)
+            alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
+            alert.view.tintColor = UIColor.black
+
+            self.present(alert, animated: true, completion: nil)
+        }
+        else if newClinicalTrialEntry.imagesList.count == 0{
+            let alert = UIAlertController(title: "Please upload at least 1 supplementary image of the skin lesion.", message: "We recommend uploading 5-10 supplementary images of the same skin lesion in different angles, rotations, or lighting.", preferredStyle: UIAlertController.Style.alert)
+            alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
+            alert.view.tintColor = UIColor.black
+
+            self.present(alert, animated: true, completion: nil)
+        }
+        else{
+            performSegue(withIdentifier: "goToClinicalTrialsEntryViewController", sender: nil)
         }
     }
     
@@ -58,6 +88,7 @@ class ClinicalTrialsEnterPhotosOfMoleViewController: UIViewController {
     
     
     @IBAction func addSupplementaryImageButtonPressed(_ sender: UIButton) {
+        isMainImage = false
         presentCameraOrPhotoLibraryOptionAlert()
     }
     
@@ -72,11 +103,14 @@ extension ClinicalTrialsEnterPhotosOfMoleViewController{
         guard let directory = try? FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false) as NSURL else {
             return false
         }
+        
         do {
-            try data.write(to: directory.appendingPathComponent(String(counter) + ".png")!)
+            let name = "Entry" + String(realm.objects(ClinicalTrialEntry.self).count - 1) + "_image" + String(counter) + ".png"
+
+            try data.write(to: directory.appendingPathComponent(name)!)
             do {
                 try realm.write{
-                    newClinicalTrialEntry.imagesList.append((String(counter) + ".png"))
+                    newClinicalTrialEntry.imagesList.append((name))
                 }
             }
             catch {
@@ -111,7 +145,7 @@ extension ClinicalTrialsEnterPhotosOfMoleViewController: UITableViewDataSource, 
         let cell = tableView.dequeueReusableCell(withIdentifier: "ClinicalTrialsPhotoOfMoleTableViewCell") as! ClinicalTrialsPhotoOfMoleTableViewCell
         
       
-        let checkName = String(indexPath.row) + ".png"
+        let checkName = "Entry" + String(realm.objects(ClinicalTrialEntry.self).count - 1) + "_image" + String(indexPath.row) + ".png"
         for entry in  newClinicalTrialEntry.imagesList {
             if entry == checkName{
                 cell.moleImageView.isHidden = false
@@ -143,6 +177,8 @@ extension ClinicalTrialsEnterPhotosOfMoleViewController:
         alert.addAction(UIAlertAction(title: "Upload from Photos", style: .default, handler: { action in
             self.choosePhotoFromLibrary()
         }))
+        alert.view.tintColor = UIColor.black
+
         self.present(alert, animated: true)
     }
     
@@ -171,6 +207,9 @@ extension ClinicalTrialsEnterPhotosOfMoleViewController:
         
         
         if isMainImage == true{
+          
+            mainImageLabel.isHidden = true
+            plusCircleImagView.isHidden = true
             do {
                 try realm.write{
                     let data = NSData(data: (image?.pngData()!)!)

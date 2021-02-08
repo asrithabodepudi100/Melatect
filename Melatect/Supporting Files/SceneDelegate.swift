@@ -9,16 +9,39 @@ import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
+    let defaults = UserDefaults.standard
     var window: UIWindow?
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
-        // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
-        // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
-        guard let _ = (scene as? UIWindowScene) else { return }
+        print ("what the fuck?")
+        if defaults.string(forKey: "navigation")  == nil{
+            print ("hihihi")
+            guard let _ = (scene as? UIWindowScene) else { return }
+            
+            // add these lines
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            
+            // if user is logged in before
+        
+                let mainTabBarController = storyboard.instantiateViewController(identifier: "OpeningViewController")
+                window?.rootViewController = mainTabBarController
+                        
+            }
+                    else{
+                        guard let _ = (scene as? UIWindowScene) else { return }
+                        
+                        // add these lines
+                        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                        
+                        // if user is logged in before
+                    
+                            let mainTabBarController = storyboard.instantiateViewController(identifier: defaults.string(forKey: "navigation")!)
+                            window?.rootViewController = mainTabBarController
+                    }
     }
-
+  
+    
     func sceneDidDisconnect(_ scene: UIScene) {
         // Called as the scene is being released by the system.
         // This occurs shortly after the scene enters the background, or when its session is discarded.

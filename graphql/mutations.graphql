@@ -1,0 +1,43 @@
+# this is an auto generated file. This will be overwritten
+mutation CreateEntry(
+  $input: CreateEntryInput!
+  $condition: ModelEntryConditionInput
+) {
+  createEntry(input: $input, condition: $condition) {
+    id
+    imageKey
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+mutation UpdateEntry(
+  $input: UpdateEntryInput!
+  $condition: ModelEntryConditionInput
+) {
+  updateEntry(input: $input, condition: $condition) {
+    id
+    imageKey
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+mutation DeleteEntry(
+  $input: DeleteEntryInput!
+  $condition: ModelEntryConditionInput
+) {
+  deleteEntry(input: $input, condition: $condition) {
+    id
+    imageKey
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}

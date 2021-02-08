@@ -12,66 +12,41 @@ import AmplifyPlugins
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    let defaults = UserDefaults.standard
+    var window: UIWindow?
+    let storyboard = UIStoryboard(name: "Main", bundle: nil)
 
     func application( _ application: UIApplication,didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         configureAmplify()
+     
         return true
     }
-
+    
+    func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+       
+        return true
+    }
+  
+    
     func configureAmplify(){
         do {
             try Amplify.add(plugin: AWSCognitoAuthPlugin())
             try Amplify.add(plugin: AWSS3StoragePlugin())
+
             
             let models = AmplifyModels()
             try Amplify.add(plugin: AWSAPIPlugin(modelRegistration: models))
             try Amplify.add(plugin: AWSDataStorePlugin(modelRegistration: models))
-
+            
             try Amplify.configure()
-            print ("Configured Amplify Successfully! :)")
+            print ("success bitch")
 
         }
         catch{
-            print("Could not configure Amplify")
+            print("Could not configure - \(error)")
         }
     }
-    
-    func uploadImage(){
-        let image = #imageLiteral(resourceName: "icons8-team-skin-type-7-96")
-        guard let imageData = image.jpegData(compressionQuality: 0.5) else {return}
-       // let melatectDiagnosis = "Malignant"
-        //let doctorDiagnosis = "Benign"
-        let key = UUID().uuidString + ".jpg"
-        
-        _ = Amplify.Storage.uploadData(key: key, data: imageData){ [self] result in
-            switch result{
-            
-            case .success(_):
-                print("Uploaded image")
-                
-                let entry = Entry(mainImage: key)
-                self.save(entry)
-                
-            case .failure(let error):
-                print("error \(error)")
-            }
-            
-        }
-    }
-    
-    
-    func save(_ entry: Entry){
-        Amplify.DataStore.save(entry){ result in
-            switch result{
-            case .success:
-                print("fuck")
-            case .failure(let error):
-                print("here is your error dumbo\(error)")
-            }
-        }
-    }
-    
-    
+
     
     // MARK: UISceneSession Lifecycle
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {

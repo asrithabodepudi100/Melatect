@@ -1,6 +1,6 @@
 {
   "auth": {
-    "melatect9c891927": {
+    "melatect783e5b8a": {
       "service": "Cognito",
       "providerPlugin": "awscloudformation",
       "dependsOn": [],
@@ -8,7 +8,7 @@
     }
   },
   "storage": {
-    "s38b8a1a4f": {
+    "s3c23d0823": {
       "service": "S3",
       "providerPlugin": "awscloudformation"
     }

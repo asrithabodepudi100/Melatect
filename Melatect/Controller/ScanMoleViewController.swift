@@ -23,6 +23,7 @@ class ScanMoleViewController: UIViewController {
     let realm = try! Realm()
     let vc = UIImagePickerController()
     var moleImage = UIImage()
+    let defaults = UserDefaults.standard
 
     
     //TAP VARIABLES
@@ -37,6 +38,10 @@ class ScanMoleViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //print(defaults.string(forKey: "navigation"))
+        
+        
         takePhotoButton.layer.cornerRadius = 15
         takePhotoButtonBackgroundView.layer.cornerRadius = 15
         instructionsBackgroundBox.layer.cornerRadius = 15

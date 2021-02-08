@@ -50,6 +50,7 @@ class SideMenuViewController: UIViewController, UITableViewDataSource, loadWebVi
     @IBOutlet weak var sideMenuTableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
+
         let nib = UINib(nibName: "SideMenuTableViewCell", bundle: nil)
         self.sideMenuTableView.register(nib, forCellReuseIdentifier: "SideMenuTableViewCell")
         self.sideMenuTableView.dataSource = self
@@ -83,7 +84,7 @@ class SideMenuViewController: UIViewController, UITableViewDataSource, loadWebVi
         else {
             cell.cellTitleLabel.text = "Contact us"
         }
-        
+      
         return cell
     }
 }

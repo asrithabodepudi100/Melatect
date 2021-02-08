@@ -1,19 +1,19 @@
 {
   "dev": {
     "awscloudformation": {
-      "AuthRoleName": "amplify-melatect-dev-125822-authRole",
-      "UnauthRoleArn": "arn:aws:iam::767588983612:role/amplify-melatect-dev-125822-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::767588983612:role/amplify-melatect-dev-125822-authRole",
+      "AuthRoleName": "amplify-melatect-dev-122923-authRole",
+      "UnauthRoleArn": "arn:aws:iam::767588983612:role/amplify-melatect-dev-122923-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::767588983612:role/amplify-melatect-dev-122923-authRole",
       "Region": "us-east-1",
-      "DeploymentBucketName": "amplify-melatect-dev-125822-deployment",
-      "UnauthRoleName": "amplify-melatect-dev-125822-unauthRole",
-      "StackName": "amplify-melatect-dev-125822",
-      "StackId": "arn:aws:cloudformation:us-east-1:767588983612:stack/amplify-melatect-dev-125822/bf5d5730-6324-11eb-a223-12cf2806950f",
-      "AmplifyAppId": "dbnjihctkf099"
+      "DeploymentBucketName": "amplify-melatect-dev-122923-deployment",
+      "UnauthRoleName": "amplify-melatect-dev-122923-unauthRole",
+      "StackName": "amplify-melatect-dev-122923",
+      "StackId": "arn:aws:cloudformation:us-east-1:767588983612:stack/amplify-melatect-dev-122923/dee12940-63e9-11eb-a856-0a720c487c5f",
+      "AmplifyAppId": "druk47dvet6qc"
     },
     "categories": {
       "auth": {
-        "melatect9c891927": {}
+        "melatect783e5b8a": {}
       }
     }
   }
