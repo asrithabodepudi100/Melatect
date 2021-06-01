@@ -396,4 +396,28 @@ Exit Interface - ability to leave the app and come in through an alternate inter
 <p>In Figure F, each dot represents a trial with a malignant image, with the x coordinate as the age and the y coordinate as the classification accuracy. There seems to be no linear correlation in this scatter plot. The highest classification accuracy for benign images when comparing different ages is 99.9%. 99.9% was the classification accuracy for 24 images with ages between 35-80. The lowest classification accuracy for malignant images when comparing different ages is 97.8%, for an image with age of  49. Although the difference is 2.1%, we concluded that there is no bias against images with an age of 50 because there was another image with age 50 with a classification accuracy of 99.2%. The image with the lowest classification accuracy must have been an outlier. 
  </p>
  
+ <h5> Classification Accuracy vs. Age: Benign Images </h5>
 
+<img width="378" alt="Screen Shot 2021-06-01 at 10 02 57 AM" src="https://user-images.githubusercontent.com/71800627/120336650-8c66f880-c2c0-11eb-83b7-adb1f68eba85.png">
+
+ <p> <i> Fig. G. Analyzing bias based on age: benign
+</i> </p>
+<p> There seems to be no linear correlation in Figure G. The highest classification accuracy for malignant images when comparing different ages is 99.9%. 99.9% was the classification accuracy for 21 images with ages between 35-80. The lowest classification accuracy for malignant images when comparing different ages is 97.6%, for an image with age of  50. Although the difference is 2.3%, we concluded that there is no bias against images with an age of 50 because there was another image with age 50 with a classification accuracy of 99.8%. 
+ </p> 
+ <h5> Classification Accuracy vs. Anatomical Site
+ </h5>
+ 
+ <img width="402" alt="Screen Shot 2021-06-01 at 10 03 42 AM" src="https://user-images.githubusercontent.com/71800627/120336757-a7d20380-c2c0-11eb-9d3f-0a2c878ec46a.png">
+ <p> <i> Fig. H. Analyzing bias based on anatomical site (provided by metadata)
+</i> </p>
+
+<p>  The bars in Figure H show the mean classification rate for moles on various anatomical sites, regardless of the mole’s diagnosis.  The highest average classification accuracy out of various anatomical sites was the posterior torso (98.9%). The lowest was head/neck (98.5%). The range is 0.4%, implying no bias according to anatomical site. 
+</p> 
+
+<h5> Acknowledgements </h5>
+ <p> We would first like to thank our advisor, Dr. Glenn Allen for providing his utmost support and advice throughout the length of this project, as well as access to computers from the MIT Kavli Institute with which we were able to run our models on, and helping us connect with dermatologists. Dr. Allen’s expertise was invaluable in formulating our research paper and methodology. We are grateful to dermatologists Dr. Jessica Howie, Dr. Neal Kumar, and Dr. John Kirwood for their input during this project. We also thank the Massachusetts General Hospital Cancer Center for its assistance in providing us with clinical photos and advice on features that would benefit patients using Melatect. </p> 
+
+<h3> AWS Architecture </h3> 
+
+
+<img width="676" alt="Screen Shot 2021-06-01 at 10 04 58 AM" src="https://user-images.githubusercontent.com/71800627/120336919-d51eb180-c2c0-11eb-9dcb-8acf3a161276.png">
