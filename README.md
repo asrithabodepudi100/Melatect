@@ -159,6 +159,7 @@
 
 
 <h3> Clinical Trials Interface </h3> 
+<p> The Clinical Trials Interface is meant for dermatologists to enter images of moles and provide input regarding Melatect’s accuracy in a clinical setting.  </p>
 <h5> Model </h5>
 <div align="left" dir="ltr" style="margin-left:0pt;">
     <table style="border:none;border-collapse:collapse;table-layout:fixed;width:468pt;">
@@ -255,3 +256,11 @@
     </table>
 </div>
 
+<h3> Pods </h3> 
+
+<p> AWS/Amplify (only used in Clinical Trials interface): used to create accounts, store photos and corresponding diagnoses of moles inputted by dermatologists, and retrain model 
+FSCalendar: Used to create calendar to schedule mole evolution notification reminders
+Friz: Used to augment images
+Realm/SQLite: used for local storage of mole images and corresponding diagnoses objects, doctor objects, risk assessment parameters, etc. in Patient interface
+SideMenu: used to create and animate side menu
+Lottie: used to embed animations within app </p>
