@@ -22,4 +22,4 @@
   3. Locate/Communicate with Doctors <br>
   4. Melanoma Risk Assessment Tool <br> </p>
 
-<b> <u> Model </b> </u>
+<b> <u Model u></b>
