@@ -98,7 +98,6 @@ class ClinicalTrialsEntryViewController: UIViewController {
         _ = Amplify.Storage.uploadData(key: key, data: imageData){ result in
             switch result{
             case .success:
-                print ("hell yeah bitch")
                 
                 Amplify.DataStore.save(Entry(imageKey: key)){ result in
                     switch result{
@@ -110,7 +109,6 @@ class ClinicalTrialsEntryViewController: UIViewController {
                     }
                 }
              case .failure(_):
-                print ("fuck this like tf")
             }
         }
     }
@@ -175,8 +173,13 @@ extension ClinicalTrialsEntryViewController: UITableViewDelegate, UITableViewDat
             }
             cell.selectionStyle = .none
             
-            cell.melatectDiagnosis.text =  clinicalTrialEntry.melatectDiagnosis 
-            if cell.melatectDiagnosis.text == "Malignant"{
+            if clinicalTrialEntry.melatectDiagnosis == "Malignant"{
+                cell.melatectDiagnosis.text = "Abnormal"
+            }
+            else{
+                cell.melatectDiagnosis.text = "Normal"
+            }
+            if cell.melatectDiagnosis.text == "Malignant" || cell.melatectDiagnosis.text == "Abnormal"{
                 cell.melatectDiagnosis.textColor = #colorLiteral(red: 1, green: 0.4299195111, blue: 0.4152081609, alpha: 1)
             }
             else{

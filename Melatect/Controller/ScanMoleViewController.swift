@@ -9,6 +9,15 @@ import UIKit
 import RealmSwift
 import SideMenu
 import Lottie
+
+
+extension Double {
+  func format(f: String) -> String {
+    return String(format: "%\(f)f", self)
+  }
+}
+
+
 class ScanMoleViewController: UIViewController {
     var menu = UISideMenuNavigationController(rootViewController: SideMenuViewController())
     private var animationView: AnimationView?

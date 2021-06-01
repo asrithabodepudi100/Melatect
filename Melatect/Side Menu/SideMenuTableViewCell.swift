@@ -22,10 +22,12 @@ class SideMenuTableViewCell: UITableViewCell {
     }
     
     @IBAction func buttonPressed(_ sender: UIButton) {
-        delegate?.loadWebView(titleLabel: cellTitleLabel.text ?? "bro idk")
-        print (delegate!)
-       // let buttonPosition:CGPoint = cellTitleLabel.convert(CGPoint.zero, to:delegate.sideMenuTableView)
-        print ("hihihi")
-    }
+        
+            delegate?.loadWebView(titleLabel: cellTitleLabel.text ?? "bro idk")
+            print (delegate!)
+           // let buttonPosition:CGPoint = cellTitleLabel.convert(CGPoint.zero, to:delegate.sideMenuTableView)
+            print ("hihihi")
+        }
+     
     
 }

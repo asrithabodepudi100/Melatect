@@ -9,6 +9,13 @@ ${BUILT_PRODUCTS_DIR}/AWSS3/AWSS3.framework
 ${BUILT_PRODUCTS_DIR}/Amplify/Amplify.framework
 ${BUILT_PRODUCTS_DIR}/AmplifyPlugins/AmplifyPlugins.framework
 ${BUILT_PRODUCTS_DIR}/AppSyncRealTimeClient/AppSyncRealTimeClient.framework
+${BUILT_PRODUCTS_DIR}/FSCalendar/FSCalendar.framework
+${PODS_ROOT}/FritzBase/Frameworks/FritzCore.framework
+${PODS_ROOT}/FritzBase/Frameworks/Fritz.framework
+${PODS_ROOT}/FritzBase/Frameworks/CoreMLHelpers.framework
+${PODS_ROOT}/FritzBase/Frameworks/FritzManagedModel.framework
+${PODS_ROOT}/FritzBase/Frameworks/FritzVision.framework
+${PODS_ROOT}/FritzVisionObjectModelFast/Frameworks/FritzVisionObjectModelFast.framework
 ${BUILT_PRODUCTS_DIR}/Realm/Realm.framework
 ${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework
 ${BUILT_PRODUCTS_DIR}/SQLite.swift/SQLite.framework

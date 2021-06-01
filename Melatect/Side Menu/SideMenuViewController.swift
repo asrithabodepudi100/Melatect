@@ -8,7 +8,7 @@
 import UIKit
 import StoreKit
 
-class SideMenuViewController: UIViewController, UITableViewDataSource, loadWebView {
+class SideMenuViewController: UIViewController, UITableViewDataSource, loadWebView, UITableViewDelegate {
     let defaults = UserDefaults.standard
 
     func loadWebView(titleLabel: String) {
@@ -18,6 +18,8 @@ class SideMenuViewController: UIViewController, UITableViewDataSource, loadWebVi
         if titleLabel == "Help Center"{
             //need to record video
             defaults.set("https://tnlrtechnologies.com/openSourceInfo.html", forKey: "url")
+            self.present(vc, animated: true, completion: nil)
+
         }
         else if titleLabel == "Feedback"{
             //redirects to app store 
@@ -29,21 +31,36 @@ class SideMenuViewController: UIViewController, UITableViewDataSource, loadWebVi
               return
             }
             UIApplication.shared.open(writeReviewURL)
+            self.present(vc, animated: true, completion: nil)
+
         }
         else if titleLabel == "Coming Soon"{
             defaults.set("https://tnlrtechnologies.com/ComingSoon.html", forKey: "url")
+            self.present(vc, animated: true, completion: nil)
+
         }
         else if titleLabel == "FAQ"{
             defaults.set("https://vidushimeel.github.io/tonnelier/openSourceInfo.html", forKey: "url")
+            self.present(vc, animated: true, completion: nil)
+
         }
         else if titleLabel == "Legal"{
             defaults.set("https://tnlrtechnologies.com/legal.html", forKey: "url")
+            self.present(vc, animated: true, completion: nil)
+
         }
-        else {
+        else if titleLabel == "Contact us"{
             //contact us
             defaults.set("https://www.linkedin.com/company/tonnelier-tech/", forKey: "url")
+            self.present(vc, animated: true, completion: nil)
+
         }
-        self.present(vc, animated: true, completion: nil)
+        else {
+            defaults.set(nil, forKey: "navigation")
+            let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let mainTabBarController = storyboard.instantiateViewController(identifier: "OpeningViewController")
+            UIApplication.shared.keyWindow?.rootViewController = mainTabBarController
+        }
     }
     
  
@@ -54,13 +71,15 @@ class SideMenuViewController: UIViewController, UITableViewDataSource, loadWebVi
         let nib = UINib(nibName: "SideMenuTableViewCell", bundle: nil)
         self.sideMenuTableView.register(nib, forCellReuseIdentifier: "SideMenuTableViewCell")
         self.sideMenuTableView.dataSource = self
+        self.sideMenuTableView.delegate = self
+
         self.sideMenuTableView.separatorStyle = UITableViewCell.SeparatorStyle.none
         self.sideMenuTableView.backgroundColor = UIColor.clear
     }
   
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        6
+       return 7
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -81,8 +100,12 @@ class SideMenuViewController: UIViewController, UITableViewDataSource, loadWebVi
         else if indexPath.row == 4{
             cell.cellTitleLabel.text = "Legal"
         }
-        else {
+        else if indexPath.row == 5{
             cell.cellTitleLabel.text = "Contact us"
+        }
+        else{
+            cell.cellTitleLabel.text = "Back to Home Page"
+            cell.cellTitleLabel.font = UIFont(name:"Avenir Light", size: 17.0)
         }
       
         return cell

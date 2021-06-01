@@ -1,5 +1,5 @@
 # Uncomment the next line to define a global platform for your project
-platform :ios, '14.0'
+platform :ios, '12.0'
 
 target 'Melatect' do
 project 'Melatect.xcodeproj'
@@ -10,7 +10,7 @@ project 'Melatect.xcodeproj'
     pod 'lottie-ios'
     pod 'RealmSwift'
     pod 'SideMenu'
-
+    
     
     pod 'Amplify'
     pod 'AmplifyPlugins/AWSCognitoAuthPlugin'
@@ -18,5 +18,9 @@ project 'Melatect.xcodeproj'
     pod 'AmplifyPlugins/AWSAPIPlugin'
     pod 'AmplifyPlugins/AWSDataStorePlugin'
 
+    pod 'Fritz', '6.1.1'
+    pod 'Fritz/VisionObjectModel/Fast'
+    
+    pod 'FSCalendar'
 
 end

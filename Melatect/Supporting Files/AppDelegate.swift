@@ -39,7 +39,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             try Amplify.add(plugin: AWSDataStorePlugin(modelRegistration: models))
             
             try Amplify.configure()
-            print ("success bitch")
+            print ("success")
 
         }
         catch{

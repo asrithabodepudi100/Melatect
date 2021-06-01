@@ -17,6 +17,7 @@
 		892F0A4B255B228C00C03569 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892F0A4A255B228C00C03569 /* TabBar.swift */; };
 		8938E2C4256079160064656B /* Doctor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8938E2C3256079160064656B /* Doctor.swift */; };
 		894072CA256CB48E000187FF /* MoleEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894072C9256CB48E000187FF /* MoleEntry.swift */; };
+		894E3D372630BEB7003B7C08 /* MoleEntriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894E3D362630BEB7003B7C08 /* MoleEntriesViewController.swift */; };
 		894E5D8D255706BC0091641D /* MyDoctorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894E5D8C255706BC0091641D /* MyDoctorsViewController.swift */; };
 		895D387D255241E5006001FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895D387C255241E5006001FD /* AppDelegate.swift */; };
 		895D387F255241E5006001FD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895D387E255241E5006001FD /* SceneDelegate.swift */; };
@@ -26,6 +27,7 @@
 		897E94EB255247EC00726EC4 /* phone.json in Resources */ = {isa = PBXBuildFile; fileRef = 897E94EA255247EC00726EC4 /* phone.json */; };
 		897E94EF2552496200726EC4 /* PreviewToSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897E94EE2552496200726EC4 /* PreviewToSignUpViewController.swift */; };
 		8982F44825CE4591001A5AE9 /* ClinicalTrialsNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8982F44725CE4590001A5AE9 /* ClinicalTrialsNavigationViewController.swift */; };
+		8983CBA525EDBC72003C5AFF /* Fritz-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8983CBA425EDBC72003C5AFF /* Fritz-Info.plist */; };
 		8984BB9725659A700089B808 /* RiskAssessmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8984BB9625659A700089B808 /* RiskAssessmentViewController.swift */; };
 		89BF9E842555084800DDCE29 /* DoctorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BF9E822555084800DDCE29 /* DoctorTableViewCell.swift */; };
 		89BF9E852555084800DDCE29 /* DoctorTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89BF9E832555084800DDCE29 /* DoctorTableViewCell.xib */; };
@@ -41,8 +43,11 @@
 		89E15B0E25B8755200B3E184 /* ClinicalTrialsEnterPhotosOfMoleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E15B0D25B8755200B3E184 /* ClinicalTrialsEnterPhotosOfMoleViewController.swift */; };
 		89E15B1125B8757F00B3E184 /* ClinicalTrialsEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E15B1025B8757F00B3E184 /* ClinicalTrialsEntryViewController.swift */; };
 		89E15B2C25B87AC100B3E184 /* ClinicalTrialEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E15B2B25B87AC100B3E184 /* ClinicalTrialEntry.swift */; };
+		89EA45BE2630D6EB00E80B3B /* FirstEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EA45BD2630D6EB00E80B3B /* FirstEntryViewController.swift */; };
 		89F39AC025CCD1CF0085B957 /* OpeningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F39ABF25CCD1CF0085B957 /* OpeningViewController.swift */; };
 		89F39AC325CCD2020085B957 /* ClinicalTrialsSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F39AC225CCD2020085B957 /* ClinicalTrialsSignUpViewController.swift */; };
+		89FA95C62630ACD80084E59C /* MoleEntryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FA95C42630ACD80084E59C /* MoleEntryTableViewCell.swift */; };
+		89FA95CB2630ADFA0084E59C /* MoleEntryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89FA95CA2630ADFA0084E59C /* MoleEntryTableViewCell.xib */; };
 		89FB3B202575494D009F33E3 /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FB3B1E2575494D009F33E3 /* SideMenuViewController.swift */; };
 		89FB3B212575494D009F33E3 /* SideMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89FB3B1F2575494D009F33E3 /* SideMenuViewController.xib */; };
 		89FB3B2C257590E0009F33E3 /* SideMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FB3B2A257590E0009F33E3 /* SideMenuTableViewCell.swift */; };
@@ -63,6 +68,7 @@
 		892F0A4A255B228C00C03569 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		8938E2C3256079160064656B /* Doctor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Doctor.swift; sourceTree = "<group>"; };
 		894072C9256CB48E000187FF /* MoleEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoleEntry.swift; sourceTree = "<group>"; };
+		894E3D362630BEB7003B7C08 /* MoleEntriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoleEntriesViewController.swift; sourceTree = "<group>"; };
 		894E5D8C255706BC0091641D /* MyDoctorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDoctorsViewController.swift; sourceTree = "<group>"; };
 		895D3879255241E5006001FD /* Melatect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Melatect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		895D387C255241E5006001FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -74,6 +80,7 @@
 		897E94EA255247EC00726EC4 /* phone.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = phone.json; sourceTree = "<group>"; };
 		897E94EE2552496200726EC4 /* PreviewToSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewToSignUpViewController.swift; sourceTree = "<group>"; };
 		8982F44725CE4590001A5AE9 /* ClinicalTrialsNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClinicalTrialsNavigationViewController.swift; sourceTree = "<group>"; };
+		8983CBA425EDBC72003C5AFF /* Fritz-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Fritz-Info.plist"; sourceTree = "<group>"; };
 		8984BB9625659A700089B808 /* RiskAssessmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiskAssessmentViewController.swift; sourceTree = "<group>"; };
 		89BF9E822555084800DDCE29 /* DoctorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorTableViewCell.swift; sourceTree = "<group>"; };
 		89BF9E832555084800DDCE29 /* DoctorTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DoctorTableViewCell.xib; sourceTree = "<group>"; };
@@ -89,8 +96,11 @@
 		89E15B0D25B8755200B3E184 /* ClinicalTrialsEnterPhotosOfMoleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClinicalTrialsEnterPhotosOfMoleViewController.swift; sourceTree = "<group>"; };
 		89E15B1025B8757F00B3E184 /* ClinicalTrialsEntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClinicalTrialsEntryViewController.swift; sourceTree = "<group>"; };
 		89E15B2B25B87AC100B3E184 /* ClinicalTrialEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClinicalTrialEntry.swift; sourceTree = "<group>"; };
+		89EA45BD2630D6EB00E80B3B /* FirstEntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstEntryViewController.swift; sourceTree = "<group>"; };
 		89F39ABF25CCD1CF0085B957 /* OpeningViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpeningViewController.swift; sourceTree = "<group>"; };
 		89F39AC225CCD2020085B957 /* ClinicalTrialsSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClinicalTrialsSignUpViewController.swift; sourceTree = "<group>"; };
+		89FA95C42630ACD80084E59C /* MoleEntryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoleEntryTableViewCell.swift; sourceTree = "<group>"; };
+		89FA95CA2630ADFA0084E59C /* MoleEntryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MoleEntryTableViewCell.xib; path = "Melatect/Clinical Trial/View/MoleEntryTableViewCell.xib"; sourceTree = SOURCE_ROOT; };
 		89FB3B1E2575494D009F33E3 /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
 		89FB3B1F2575494D009F33E3 /* SideMenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SideMenuViewController.xib; sourceTree = "<group>"; };
 		89FB3B2A257590E0009F33E3 /* SideMenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuTableViewCell.swift; sourceTree = "<group>"; };
@@ -181,6 +191,7 @@
 			isa = PBXGroup;
 			children = (
 				895D388A255241EA006001FD /* Info.plist */,
+				8983CBA425EDBC72003C5AFF /* Fritz-Info.plist */,
 				89E15B3025B8808B00B3E184 /* Supporting Files */,
 				8938E2C62560791F0064656B /* Model */,
 				899C1B532552465A00C0C8E4 /* View */,
@@ -196,6 +207,7 @@
 			children = (
 				890A0258256C231600724AE6 /* Main.storyboard */,
 				89BF9E832555084800DDCE29 /* DoctorTableViewCell.xib */,
+				89FA95CA2630ADFA0084E59C /* MoleEntryTableViewCell.xib */,
 				897E94E7255247E500726EC4 /* doctor.json */,
 				8900C9CD25787B7900501450 /* malignOrBenignLoadingScreen.json */,
 				897E94EA255247EC00726EC4 /* phone.json */,
@@ -216,6 +228,9 @@
 				89DEF8C62569F74B002B8F34 /* DisplayDiagnosisViewController.swift */,
 				89F39ABF25CCD1CF0085B957 /* OpeningViewController.swift */,
 				89C1B53C25CD8BEA007EEEB8 /* HippaPrivacyViewController.swift */,
+				89FA95C42630ACD80084E59C /* MoleEntryTableViewCell.swift */,
+				894E3D362630BEB7003B7C08 /* MoleEntriesViewController.swift */,
+				89EA45BD2630D6EB00E80B3B /* FirstEntryViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -327,6 +342,7 @@
 				TargetAttributes = {
 					895D3878255241E5006001FD = {
 						CreatedOnToolsVersion = 12.1;
+						LastSwiftMigration = 1230;
 					};
 				};
 			};
@@ -364,7 +380,9 @@
 				89FB3B2D257590E0009F33E3 /* SideMenuTableViewCell.xib in Resources */,
 				89CCE62E257871E500DD18F6 /* LaunchScreen.storyboard in Resources */,
 				540C2215E2C64901ACA00FB0 /* amplifyconfiguration.json in Resources */,
+				8983CBA525EDBC72003C5AFF /* Fritz-Info.plist in Resources */,
 				3F51A0AFBA3F4C19881188F9 /* awsconfiguration.json in Resources */,
+				89FA95CB2630ADFA0084E59C /* MoleEntryTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,6 +436,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				89DEF8C72569F74B002B8F34 /* DisplayDiagnosisViewController.swift in Sources */,
+				89FA95C62630ACD80084E59C /* MoleEntryTableViewCell.swift in Sources */,
 				89FB3B202575494D009F33E3 /* SideMenuViewController.swift in Sources */,
 				894072CA256CB48E000187FF /* MoleEntry.swift in Sources */,
 				89F39AC025CCD1CF0085B957 /* OpeningViewController.swift in Sources */,
@@ -434,6 +453,7 @@
 				894E5D8D255706BC0091641D /* MyDoctorsViewController.swift in Sources */,
 				89E15B0B25B8751C00B3E184 /* ClinicalTrialsHomePageViewController.swift in Sources */,
 				89E15B1125B8757F00B3E184 /* ClinicalTrialsEntryViewController.swift in Sources */,
+				89EA45BE2630D6EB00E80B3B /* FirstEntryViewController.swift in Sources */,
 				892F0A4B255B228C00C03569 /* TabBar.swift in Sources */,
 				89BF9E842555084800DDCE29 /* DoctorTableViewCell.swift in Sources */,
 				897E94EF2552496200726EC4 /* PreviewToSignUpViewController.swift in Sources */,
@@ -445,6 +465,7 @@
 				8938E2C4256079160064656B /* Doctor.swift in Sources */,
 				E1CB1948BFFD46228BD4549E /* AmplifyModels.swift in Sources */,
 				F7DA15149D5B43B480A887D6 /* Entry.swift in Sources */,
+				894E3D372630BEB7003B7C08 /* MoleEntriesViewController.swift in Sources */,
 				575B7102D3A4486E9D234F32 /* Entry+Schema.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -574,6 +595,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = NTC9D823P9;
@@ -583,9 +605,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.6;
+				MARKETING_VERSION = 1.7;
 				PRODUCT_BUNDLE_IDENTIFIER = tech.tonnelier.melatect;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -597,6 +620,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = NTC9D823P9;
@@ -606,7 +630,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.6;
+				MARKETING_VERSION = 1.7;
 				PRODUCT_BUNDLE_IDENTIFIER = tech.tonnelier.melatect;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

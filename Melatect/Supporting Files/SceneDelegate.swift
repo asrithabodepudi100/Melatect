@@ -8,39 +8,33 @@
 import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
-
+    
     let defaults = UserDefaults.standard
     var window: UIWindow?
-
-
+    
+    
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        print ("what the fuck?")
         if defaults.string(forKey: "navigation")  == nil{
-            print ("hihihi")
             guard let _ = (scene as? UIWindowScene) else { return }
             
             // add these lines
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             
             // if user is logged in before
-        
-                let mainTabBarController = storyboard.instantiateViewController(identifier: "OpeningViewController")
-                window?.rootViewController = mainTabBarController
-                        
-            }
-                    else{
-                        guard let _ = (scene as? UIWindowScene) else { return }
-                        
-                        // add these lines
-                        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-                        
-                        // if user is logged in before
-                    
-                            let mainTabBarController = storyboard.instantiateViewController(identifier: defaults.string(forKey: "navigation")!)
-                            window?.rootViewController = mainTabBarController
-                    }
+            
+            let mainTabBarController = storyboard.instantiateViewController(identifier: "OpeningViewController")
+            window?.rootViewController = mainTabBarController
+            
+        }
+        else{
+            guard let _ = (scene as? UIWindowScene) else { return }
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            
+            let mainTabBarController = storyboard.instantiateViewController(identifier: defaults.string(forKey: "navigation")!)
+            window?.rootViewController = mainTabBarController
+        }
     }
-  
+    
     
     func sceneDidDisconnect(_ scene: UIScene) {
         // Called as the scene is being released by the system.

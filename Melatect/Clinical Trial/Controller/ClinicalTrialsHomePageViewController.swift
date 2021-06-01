@@ -96,6 +96,7 @@ class ClinicalTrialsHomePageViewController: UIViewController, UITableViewDataSou
         
         if cell.melatectDiagnosis.text == "Malignant"{
             cell.melatectDiagnosis.textColor = #colorLiteral(red: 1, green: 0.4299195111, blue: 0.4152081609, alpha: 1)
+            cell.melatectDiagnosis.text = "Abnormal"
             print("malignant")
         }
         else{
