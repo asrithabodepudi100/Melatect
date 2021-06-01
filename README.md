@@ -22,4 +22,4 @@
   3. Locate/Communicate with Doctors <br>
   4. Melanoma Risk Assessment Tool <br> </p>
 
-<b> <u Model u></b>
+<p>This is some <u class="spelling-error">mispeled</u> text.</p>
