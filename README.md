@@ -258,9 +258,9 @@
 
 <h3> Pods </h3> 
 
-<p> <b> AWS/Amplify (only used in Clinical Trials interface) </b> : used to create accounts, store photos and corresponding diagnoses of moles inputted by dermatologists, and retrain model <br> 
-FSCalendar: Used to create calendar to schedule mole evolution notification reminders  <br>
-Friz: Used to augment images  <br>
-Realm/SQLite: used for local storage of mole images and corresponding diagnoses objects, doctor objects, risk assessment parameters, etc. in Patient interface  <br>
-SideMenu: used to create and animate side menu  <br>
-Lottie: used to embed animations within app   <br> </p>
+<p> <b> AWS/Amplify (only used in Clinical Trials interface) </b>: used to create accounts, store photos and corresponding diagnoses of moles inputted by dermatologists, and retrain model <br> 
+<b>FSCalendar</b>: Used to create calendar to schedule mole evolution notification reminders  <br>
+<b>Friz</b>: Used to augment images  <br>
+<b>Realm/SQLite</b>: used for local storage of mole images and corresponding diagnoses objects, doctor objects, risk assessment parameters, etc. in Patient interface  <br>
+<b>SideMenu</b>: used to create and animate side menu  <br>
+<b>Lottie</b>: used to embed animations within app   <br> </p>
