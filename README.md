@@ -13,3 +13,13 @@
   4. Side Menu <br> 
   5. Supporting Files <br> 
   6. AWS Architecture </p>
+
+<h3> Patient Interface </h3> 
+<p> 
+  Melatect’s first interface, the patient interface, has four main features: <br>
+  1. Diagnosis of Mole <br>
+  2. Mole Evolution <br>
+  3. Locate/Communicate with Doctors <br>
+  4. Melanoma Risk Assessment Tool <br> </p>
+
+<b> <u> Model </b> </u>
