@@ -2,3 +2,14 @@
 <p><br></p>
 
 
+<h1> Melatect </h1>
+<p> Melatect is an iOS application with an embedded machine learning model that can provide a benign or malignant skin cancer (melanoma) classification for a mole with a 95% accuracy rate. Melatect follows the MVC (model-view-controller) design pattern, and its files are organized as such within each interface.  </p>
+
+<h2> Table of Contents </h2> 
+<p> 
+  1. Patient Interface
+  2. Clinical Trials Interface
+  3. Pods
+  4. Side Menu 
+  5. Supporting Files
+  6. AWS Architecture </p>
