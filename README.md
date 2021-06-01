@@ -264,3 +264,49 @@
 <b>Realm/SQLite</b>: used for local storage of mole images and corresponding diagnoses objects, doctor objects, risk assessment parameters, etc. in Patient interface  <br>
 <b>SideMenu</b>: used to create and animate side menu  <br>
 <b>Lottie</b>: used to embed animations within app   <br> </p>
+
+
+<h3> Side Menu </h3> 
+
+<p>
+The side menu was included in both interfaces  and allowed the user to switch between them while also learning logistical and legal information regarding Melatect. Our side menu included the following options: <br>
+Help Center - provides video tutorials on how to use the app   <br>
+Feedback - takes user to the iOS app store to leave a review  <br>
+Coming Soon - features we plan to implement in the coming future, along with an option for users to leave a suggestion on features they’d like to see on the app  <br>
+FAQ - Frequently asked questions about HIPAA privacy, app privacy, data collection, structure of the app, and how to use the app  <br>
+Legal - Legal documentation on HIPAA privacy and data collection  <br>
+Contact Us - methods of contacting developers (phone number, email)  <br>
+Exit Interface - ability to leave the app and come in through an alternate interface  <br> </p>
+<div align="left" dir="ltr" style="margin-left:0pt;">
+    <table style="border:none;border-collapse:collapse;table-layout:fixed;width:468pt;">
+        <tbody>
+            <tr style="height:0pt;">
+                <td style="border-left:solid #000000 1pt;border-right:solid #000000 1pt;border-bottom:solid #000000 1pt;border-top:solid #000000 1pt;vertical-align:top;padding:5pt 5pt 5pt 5pt;overflow:hidden;overflow-wrap:break-word;">
+                    <p dir="ltr" style="line-height:1.2;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:11pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:700;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">File&nbsp;</span></p>
+                </td>
+                <td style="border-left:solid #000000 1pt;border-right:solid #000000 1pt;border-bottom:solid #000000 1pt;border-top:solid #000000 1pt;vertical-align:top;padding:5pt 5pt 5pt 5pt;overflow:hidden;overflow-wrap:break-word;">
+                    <p dir="ltr" style="line-height:1.2;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:11pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:700;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">Summary&nbsp;</span></p>
+                </td>
+            </tr>
+            <tr style="height:0pt;">
+                <td style="border-left:solid #000000 1pt;border-right:solid #000000 1pt;border-bottom:solid #000000 1pt;border-top:solid #000000 1pt;vertical-align:top;padding:5pt 5pt 5pt 5pt;overflow:hidden;overflow-wrap:break-word;">
+                    <p dir="ltr" style="line-height:1.2;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:11pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">SideMenuTableViewCell.swift</span></p>
+                    <p dir="ltr" style="line-height:1.2;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:11pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">SideMenuTableViewCell.xib</span></p>
+                </td>
+                <td style="border-left:solid #000000 1pt;border-right:solid #000000 1pt;border-bottom:solid #000000 1pt;border-top:solid #000000 1pt;vertical-align:top;padding:5pt 5pt 5pt 5pt;overflow:hidden;overflow-wrap:break-word;">
+                    <p dir="ltr" style="line-height:1.2;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:11pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">Interface for each cell in side menu table view&nbsp;</span></p>
+                </td>
+            </tr>
+            <tr style="height:0pt;">
+                <td style="border-left:solid #000000 1pt;border-right:solid #000000 1pt;border-bottom:solid #000000 1pt;border-top:solid #000000 1pt;vertical-align:top;padding:5pt 5pt 5pt 5pt;overflow:hidden;overflow-wrap:break-word;">
+                    <p dir="ltr" style="line-height:1.2;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:11pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">SideMenuViewController.swift</span></p>
+                    <p dir="ltr" style="line-height:1.2;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:11pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">SideMenuViewController.xib</span></p>
+                </td>
+                <td style="border-left:solid #000000 1pt;border-right:solid #000000 1pt;border-bottom:solid #000000 1pt;border-top:solid #000000 1pt;vertical-align:top;padding:5pt 5pt 5pt 5pt;overflow:hidden;overflow-wrap:break-word;">
+                    <p dir="ltr" style="line-height:1.2;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:11pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">Interface for side menu</span></p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
