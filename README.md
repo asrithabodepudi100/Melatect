@@ -371,3 +371,29 @@ Exit Interface - ability to leave the app and come in through an alternate inter
 <img width="350" alt="Screen Shot 2021-06-01 at 9 57 03 AM" src="https://user-images.githubusercontent.com/71800627/120335802-c683ca80-c2bf-11eb-9178-4aa937926be7.png">
 <p> <i> Fig. B. 1st Prototype Accuracy Results Malignant </i> </p>
 <p> Figure B represents 100 trials, as seen in the data table directly under the scatter plot. The testing was done using the first prototype of our machine learning model. Accuracy for 100 trials was 95.7%.  </p> 
+
+<h5> Trial Number vs. Classification Accuracy: Malignant Images, Second Prototype </h5>
+<img width="363" alt="Screen Shot 2021-06-01 at 9 58 11 AM" src="https://user-images.githubusercontent.com/71800627/120335930-e2876c00-c2bf-11eb-9eeb-37a8ee866c0b.png">
+
+<p> <i> Fig. D. 2nd Prototype Accuracy Results Malignant </i> </p>
+<p> Figure D shows that the average classification accuracy for malignant moles is 98.8%, so the equation for the line of best fit is y = 98.8. There is also no linear correlation in this graph.  </p> 
+
+<h5> Sex vs. Classification Accuracy </h5>
+
+
+<img width="340" alt="Screen Shot 2021-06-01 at 9 59 13 AM" src="https://user-images.githubusercontent.com/71800627/120336101-08147580-c2c0-11eb-9916-2a5112e47b66.png">
+<p> <i> Fig. E. Analyzing bias based on sex: both malignant and benign </i> </p>
+
+<p> The bars in Figure E show the mean classification rate for male and female images, regardless of the mole’s diagnosis. The graph was made using the male and female labels given to each image on ISIC metadata.  The average classification accuracy for moles on females is 98.7%, and the average classification accuracy for moles on males is 98.4%. The difference is 0.26%, less than 2%.</p>
+
+<h5>Classification Accuracy vs. Age: Malignant Images </h5>
+<p> Men are more likely to develop basal and squamous cell carcinoma, generally after the age 50. Skin cancer in people above age 65 has increased dramatically [2], which is why it is important for us to analyze the bias Melatect may have based on age.
+</p>
+
+<img width="343" alt="Screen Shot 2021-06-01 at 10 00 10 AM" src="https://user-images.githubusercontent.com/71800627/120336256-29756180-c2c0-11eb-8ca3-3d2f7e179452.png">
+
+<p> <i> Fig. F. Analyzing bias based on age: malignant </i> </p>
+<p>In Figure F, each dot represents a trial with a malignant image, with the x coordinate as the age and the y coordinate as the classification accuracy. There seems to be no linear correlation in this scatter plot. The highest classification accuracy for benign images when comparing different ages is 99.9%. 99.9% was the classification accuracy for 24 images with ages between 35-80. The lowest classification accuracy for malignant images when comparing different ages is 97.8%, for an image with age of  49. Although the difference is 2.1%, we concluded that there is no bias against images with an age of 50 because there was another image with age 50 with a classification accuracy of 99.2%. The image with the lowest classification accuracy must have been an outlier. 
+ </p>
+ 
+
